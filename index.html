@@ -1,13 +1,119 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FrontCat & Dog</title>
+    <link rel="stylesheet" href="estilos/estilos.css">
+    <title>FrontCat&Dog</title>
 </head>
 <body>
-    <h2>Productos Destacados</h2>
-    <p>Comederos - Accesorios - Comida</p>
-    <img src="imagenes/bistek.png" alt="Bistek para perro"> <img src="imagenes/Comida pelotitas.png" alt="Comidas pelotitas"> <img src="imagenes/Huesitos.png" alt=" Huesitos coloridas">
+    <header>
+        <div class="cont-1">
+            <aside id="oferta">Grandes ofertas en comederos</aside>
+            <div class="idioma-moneda">
+                <label id="lenguage" for="idioma">Idioma:</label>
+                <select id="idioma" name="idioma">
+                    <option value="es">Español(LATAM)</option>
+                    <option value="en">Inglés</option>
+                    <option value="pt">Portugués</option>
+                </select>
+                
+                <label id="currency" for="moneda">Moneda:</label>
+                <select id="moneda" name="moneda">
+                    <option value="usd">USD</option>
+                    <option value="pesos">ARG</option>
+                    <option value="eur">EUR</option>
+                </select>
+            </div>
+        </div>
+        <nav>
+            <div class="logo"><span class="Front">Front</span><span class="Front-2">Cat&Dog</span></div>
+            <div class="cont-2">
+                <ul>
+                    <li id="categorias"><a href="#">Categorias</a></li>
+                    <li id="pets"><a href="#">Pets</a></li>
+                    <li id="nosotros"><a href="#">Nosotros</a></li>
+                    <li id="contacto-menu"><a href="#">Contáctanos</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container-main">
+            <h2 id="bienvenida">¡Es un placer tenerte aquí!</h2>
+            <h3 id="descuento">¡Comederos en descuento!</h3>
+            <button id="boton-comederos"><a href="#">COMEDEROS</a></button>
+        </div>
+    </main>
+    <section class="Productos-destacados">
+        <h2 id="destacados">Productos destacados</h2>
+        <h3 id="tags">Comederos - Accesorios - Comida </h3>
+        <div class="img-productos">
+            <div class="tarjeta">
+                <img src="imagenes/1 pieza Juguete de masticar para mascota pesa al azar.jpg" alt="Producto 1">
+                <div class="contenido">
+                    <h3 id="juguetes">Juguetes</h3>
+                    <p>$500</p>
+                </div>
+            </div>
+    
+            <div class="tarjeta">
+                <img src="imagenes/Cerdito de peluche para perro.jpg" alt="Producto 2">
+                <div class="contenido">
+                    <h3 id="fashion">Fashion look</h3>
+                    <p>$1500</p>
+                </div>
+            </div>
+    
+            <div class="tarjeta">
+                <img src="imagenes/descargar.jpg" alt="Producto 3">
+                <div class="contenido">
+                    <h3 id="dulces">Dulces</h3>
+                    <p>$850</p>
+                </div>
+            </div>
+        </div>
+    <section id="contacto" class="contacto">
+        <h2 id="form-titulo">Contáctanos</h2>
+        <form action="#" method="POST">
+            <input id="nombre" type="text" name="nombre" placeholder="Nombre y Apellido" required>
+            <input id="correo" type="email" name="correo" placeholder="Ingresá tu correo electrónico" required>
+            <input id="telefono" type="tel" name="telefono" placeholder="Teléfono" required>
+            <div class="botones">
+                <button id="reset" type="reset" class="reset">Resetear</button>
+                <button id="enviar" type="submit" class="enviar">Enviar</button>
+            </div>
+        </form>
+    </section>
 </body>
+<footer>
+    <div class="suscripcion">
+        <p id="sub-texto">📩 Suscríbete para más novedades</p>
+        <div class="input-group">
+            <input type="email" placeholder="Ingresá tu correo electrónico">
+            <button id="sub-btn">Suscribirme</button>
+        </div>
+    </div>
+    <div class="info">
+        <div class="item">
+            <img src="imagenes/Ubicacion.png.jpg" alt="Localidad">
+            <p><strong id="localidad-label">Localidad</strong><br>Posadas - Misiones</p>
+        </div>
+        <div class="item">
+            <img src="imagenes/telefono.png.jpg" alt="Teléfono">
+            <p><strong id="telefono-label">Teléfono</strong><br>1234-56789</p>
+        </div>
+        <div class="item">
+            <img src="imagenes/email.png.jpg" alt="Correo Electrónico">
+            <p><strong id="email-label">Correo Electrónico</strong><br>estoesunaprueba@gmail.com</p>
+        </div>
+    </div>
+    <div class="marca">
+        <p>🐱<strong>Front</strong><span>Cat&Dog</span>🐶</p>
+    </div>
+    <div class="derechos">
+        <p id="derechos">Todos los derechos reservados</p>
+    </div>
+</footer>
+<script src="script.js"></script>
 </html>

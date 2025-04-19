@@ -1,0 +1,465 @@
+/* Reset y configuración general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Barra superior */
+.cont-1 {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 20px;
+    padding-left: 850px;
+}
+
+.cont-1 aside{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: bold;
+}
+
+.idioma-moneda {
+    margin-left: auto;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.idioma-moneda label {
+    color: white;
+}
+
+.idioma-moneda select {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    color: black;
+}
+
+/* Navegación */
+nav {
+    background-color: #E5A24A;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.logo {
+    color: white;
+    font-size: 50px;
+}
+
+.Front {
+    color: brown;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.cont-2 ul {
+    font-size: 20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.cont-2 li a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s;
+}
+
+.cont-2 li a:hover {
+    color: white;
+}
+
+/* Sección principal */
+main {
+    background-image: url('../imagenes/Plato\ de\ perro.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    height: 80vh;
+    padding-left: 10%;
+}
+
+.container-main {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.container-main h2 {
+    font-size: 2rem;
+    color: black;
+}
+
+.container-main h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.container-main button {
+    background-color: #E5A24A;
+    ;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.container-main button:hover {
+    background-color: darkorange;
+}
+
+.container-main button a {
+    color: black;
+    text-decoration: none;
+}
+
+/* Productos destacados */
+.Productos-destacados {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.Productos-destacados h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.img-productos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.tarjeta {
+    margin-top: 30px;
+    width: 250px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.tarjeta:hover {
+    transform: scale(1.15);
+    box-shadow: 4px 4px 15px rgb(0, 0, 0, 0.3);
+}
+
+.tarjeta img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.tarjeta .contenido {
+    padding: 15px;
+}
+
+.tarjeta h3 {
+    color: black;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.tarjeta p {
+    color: black;
+    font-size: 14px;
+}
+
+/* Formulario de contacto */
+.contacto {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.contacto input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #E5A24A;
+    color: black;
+}
+
+.contacto input::placeholder {
+    color: black;
+}
+
+.contacto button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contacto .reset {
+    background: orange;
+    color: black;
+}
+
+.contacto .enviar {
+    background: orange;
+    color: black;
+}
+
+/* Footer */
+footer {
+    height: 100%;
+    background: linear-gradient(to bottom, darkcyan, cadetblue);
+    background-color: darkcyan;
+    color: black;
+    text-align: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.suscripcion {
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.input-group {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.input-group input {
+    background-color: white;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    width: 250px;
+}
+
+.input-group button {
+    background-color: orange;
+    color: black;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.info {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.item {
+    text-align: unset;
+    width: 30%;
+}
+
+.item img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.marca p {
+    color: brown;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.marca span {
+    color: white;
+}
+
+.derechos {
+    width: 100%;
+    color: white;
+    background-color: black;
+    padding: 10px;
+    font-size: 14px;
+}
+
+/* -- Media Queries -- */
+
+/* Dispositivos pequeños (teléfonos, hasta 600px) */
+
+@media (max-width: 600px) {
+    .cont-1 {
+        flex-direction: column;
+        padding-left: 10px;
+        padding-right: 10px;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .cont-1 aside {
+        position: static;
+        transform: none;
+    }
+
+    .idioma-moneda{
+        margin-right: 55px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .logo {
+        font-size: 35px;
+    }
+
+    .cont-2 ul {
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+    }
+
+    main {
+        height: auto;
+        padding: 20px;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .container-main h2 {
+        font-size: 1.5rem;
+    }
+
+    .container-main h3 {
+        font-size: 1.2rem;
+    }
+
+    .img-productos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tarjeta {
+        width: 90%;
+    }
+
+    .contacto input {
+        width: 100%;
+    }
+
+    .input-group {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .item {
+        width: 100%;
+        text-align: center;
+    }
+
+    .marca p {
+        font-size: 30px;
+    }
+}
+
+/* Dispositivos/Tablets (601px - 1024px) */
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    .cont-1 {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .cont-1 aside {
+        position: static;
+        transform: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .cont-2 ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .img-productos {
+        justify-content: center;
+    }
+
+    .tarjeta {
+        width: 45%;
+    }
+
+    .input-group {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .info {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .item {
+        width: 90%;
+        text-align: center;
+    }
+}
+
+/* Dispositivo-Escritorio grande (más de 1024px) */
+
+@media (min-width: 1025px) {
+    .cont-1 {
+        padding-left: 850px;
+    }
+
+    .img-productos {
+        justify-content: center;
+    }
+
+    .tarjeta {
+        width: 250px;
+    }
+
+    .input-group {
+        flex-direction: row;
+    }
+
+    .info {
+        flex-direction: row;
+    }
+
+    .item {
+        width: 30%;
+        text-align: unset;
+    }
+}
